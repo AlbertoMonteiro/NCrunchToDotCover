@@ -1,6 +1,4 @@
-﻿using System.IO;
-using System.Xml.Serialization;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NCrunchToDotCover.Core.NCrunch;
 
 namespace NCrunchToDotCover.Core.Tests
@@ -11,9 +9,9 @@ namespace NCrunchToDotCover.Core.Tests
         [TestMethod]
         public void CanDeserializedXmlInClass()
         {
-            var xmlSerializer = new XmlSerializer(typeof(Solution));
-            var solution = xmlSerializer.Deserialize(new StreamReader(@"NCrunchCoverage.xml"));
-            Assert.IsNotNull(solution);
+            var solutionExtractor = new NCrunchExtractor(@"NCrunchCoverage.xml");
+            var coverage = solutionExtractor.ExtractCoverage();
+            Assert.IsNotNull(coverage);
         }
     }
 }

@@ -47,6 +47,7 @@
     <Compile Include="DotCover\InternalCompiledMethod.cs" />
     <Compile Include="DotCover\Method.cs" />
     <Compile Include="DotCover\Namespace.cs" />
+    <Compile Include="DotCover\NCrunchExtractor.cs" />
     <Compile Include="DotCover\OwnCoverage.cs" />
     <Compile Include="DotCover\Property.cs" />
     <Compile Include="DotCover\PropertyGetter.cs" />
@@ -54,7 +55,9 @@
     <Compile Include="DotCover\Root.cs" />
     <Compile Include="DotCover\RootProject.cs" />
     <Compile Include="DotCover\Type.cs" />
+    <Compile Include="ICoverageExtractor.cs" />
     <Compile Include="NCrunch\Line.cs" />
+    <Compile Include="NCrunch\NCrunchExtractor.cs" />
     <Compile Include="NCrunch\Project.cs" />
     <Compile Include="NCrunch\Solution.cs" />
     <Compile Include="NCrunch\SourceFile.cs" />
