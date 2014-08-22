@@ -14,6 +14,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "git", "git", "{D3F245AF-467
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BE8F61FE-6617-415A-884C-F3D15B983C22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCrunchToDotCover.Core.Tests", "Tests\NCrunchToDotCover.Core.Tests\NCrunchToDotCover.Core.Tests.csproj", "{3501CE43-B7B9-4274-BD81-D0995982E2D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,8 +32,15 @@ Global
 		{4180A860-D616-40CF-90BA-9F7B1D1F3D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4180A860-D616-40CF-90BA-9F7B1D1F3D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4180A860-D616-40CF-90BA-9F7B1D1F3D93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3501CE43-B7B9-4274-BD81-D0995982E2D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3501CE43-B7B9-4274-BD81-D0995982E2D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3501CE43-B7B9-4274-BD81-D0995982E2D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3501CE43-B7B9-4274-BD81-D0995982E2D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3501CE43-B7B9-4274-BD81-D0995982E2D5} = {BE8F61FE-6617-415A-884C-F3D15B983C22}
 	EndGlobalSection
 EndGlobal
