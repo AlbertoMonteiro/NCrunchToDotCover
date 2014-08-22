@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0DBAD450-0AF6-4B87-9295-25534F788D43}</ProjectGuid>
+    <ProjectGuid>{3E32DBF6-7F69-4E53-8999-D11883DF423A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NCrunchToDotCover.Core</RootNamespace>
-    <AssemblyName>NCrunchToDotCover.Core</AssemblyName>
+    <RootNamespace>NCrunchToDotCover.Converter</RootNamespace>
+    <AssemblyName>NCrunchToDotCover.Converter</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,31 +39,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DotCover\AnonymousMethod.cs" />
-    <Compile Include="DotCover\Constructor.cs" />
-    <Compile Include="DotCover\Event.cs" />
-    <Compile Include="DotCover\EventAdder.cs" />
-    <Compile Include="DotCover\EventRemover.cs" />
-    <Compile Include="DotCover\IDotCoverCoverageExtractor.cs" />
-    <Compile Include="DotCover\InternalCompiledMethod.cs" />
-    <Compile Include="DotCover\Method.cs" />
-    <Compile Include="DotCover\Namespace.cs" />
-    <Compile Include="DotCover\DotCoverExtractor.cs" />
-    <Compile Include="DotCover\OwnCoverage.cs" />
-    <Compile Include="DotCover\Property.cs" />
-    <Compile Include="DotCover\PropertyGetter.cs" />
-    <Compile Include="DotCover\PropertySetter.cs" />
-    <Compile Include="DotCover\Root.cs" />
-    <Compile Include="DotCover\RootProject.cs" />
-    <Compile Include="DotCover\Type.cs" />
-    <Compile Include="ICoverageExtractor.cs" />
-    <Compile Include="NCrunch\INCrunchCoverageExtractor.cs" />
-    <Compile Include="NCrunch\Line.cs" />
-    <Compile Include="NCrunch\NCrunchExtractor.cs" />
-    <Compile Include="NCrunch\Project.cs" />
-    <Compile Include="NCrunch\Solution.cs" />
-    <Compile Include="NCrunch\SourceFile.cs" />
+    <Compile Include="CoverageConverter.cs" />
+    <Compile Include="ICoverageConverter.cs" />
+    <Compile Include="ILineInterpreter.cs" />
+    <Compile Include="LineInterpreter.cs" />
+    <Compile Include="LineInformation.cs" />
+    <Compile Include="LineKind.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NCrunchToDotCover.Core\NCrunchToDotCover.Core.csproj">
+      <Project>{0dbad450-0af6-4b87-9295-25534f788d43}</Project>
+      <Name>NCrunchToDotCover.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

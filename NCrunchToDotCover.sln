@@ -18,6 +18,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BE8F61FE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCrunchToDotCover.Core.Tests", "Tests\NCrunchToDotCover.Core.Tests\NCrunchToDotCover.Core.Tests.csproj", "{3501CE43-B7B9-4274-BD81-D0995982E2D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCrunchToDotCover.Converter", "NCrunchToDotCover.Converter\NCrunchToDotCover.Converter.csproj", "{3E32DBF6-7F69-4E53-8999-D11883DF423A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCrunchToDotCover.Converter.Test", "Tests\NCrunchToDotCover.Converter.Test\NCrunchToDotCover.Converter.Test.csproj", "{AF6E7D86-6EF8-45C1-8964-3254F0E2F102}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,11 +40,20 @@ Global
 		{3501CE43-B7B9-4274-BD81-D0995982E2D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3501CE43-B7B9-4274-BD81-D0995982E2D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3501CE43-B7B9-4274-BD81-D0995982E2D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E32DBF6-7F69-4E53-8999-D11883DF423A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E32DBF6-7F69-4E53-8999-D11883DF423A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E32DBF6-7F69-4E53-8999-D11883DF423A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E32DBF6-7F69-4E53-8999-D11883DF423A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF6E7D86-6EF8-45C1-8964-3254F0E2F102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF6E7D86-6EF8-45C1-8964-3254F0E2F102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF6E7D86-6EF8-45C1-8964-3254F0E2F102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF6E7D86-6EF8-45C1-8964-3254F0E2F102}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3501CE43-B7B9-4274-BD81-D0995982E2D5} = {BE8F61FE-6617-415A-884C-F3D15B983C22}
+		{AF6E7D86-6EF8-45C1-8964-3254F0E2F102} = {BE8F61FE-6617-415A-884C-F3D15B983C22}
 	EndGlobalSection
 EndGlobal

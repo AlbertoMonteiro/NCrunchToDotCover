@@ -1,12 +1,12 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NCrunchToDotCover.Core.NCrunch;
+﻿using NCrunchToDotCover.Core.NCrunch;
+using NUnit.Framework;
 
 namespace NCrunchToDotCover.Core.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class GivenNCrunchExctractor
     {
-        [TestMethod]
+        [Test]
         public void CanDeserializedXmlInClass()
         {
             var solutionExtractor = new NCrunchExtractor(@"NCrunchCoverage.xml");

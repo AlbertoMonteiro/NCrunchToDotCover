@@ -3,7 +3,7 @@ using System.Xml.Serialization;
 
 namespace NCrunchToDotCover.Core.NCrunch
 {
-    public class NCrunchExtractor : ICoverageExtractor<Solution>
+    public class NCrunchExtractor : INCrunchCoverageExtractor
     {
         private readonly string path;
 

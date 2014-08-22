@@ -1,12 +1,12 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NCrunchToDotCover.Core.DotCover;
+﻿using NCrunchToDotCover.Core.DotCover;
+using NUnit.Framework;
 
 namespace NCrunchToDotCover.Core.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class GivenDotCoverExctractor
     {
-        [TestMethod]
+        [Test]
         public void CanDeserializedXmlInClass()
         {
             var solutionExtractor = new DotCoverExtractor(@"dotCoverCoverage.xml");

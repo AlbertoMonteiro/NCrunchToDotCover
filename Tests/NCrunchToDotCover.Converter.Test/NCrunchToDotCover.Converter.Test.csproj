@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3501CE43-B7B9-4274-BD81-D0995982E2D5}</ProjectGuid>
+    <ProjectGuid>{AF6E7D86-6EF8-45C1-8964-3254F0E2F102}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NCrunchToDotCover.Core.Tests</RootNamespace>
-    <AssemblyName>NCrunchToDotCover.Core.Tests</AssemblyName>
+    <RootNamespace>NCrunchToDotCover.Converter.Test</RootNamespace>
+    <AssemblyName>NCrunchToDotCover.Converter.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,26 +49,17 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="GivenDotCoverExctractor.cs" />
-    <Compile Include="GivenNCrunchExctractor.cs" />
+    <Compile Include="GivenCoverageConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\NCrunchToDotCover.Core\NCrunchToDotCover.Core.csproj">
-      <Project>{0DBAD450-0AF6-4B87-9295-25534F788D43}</Project>
-      <Name>NCrunchToDotCover.Core</Name>
+    <ProjectReference Include="..\..\NCrunchToDotCover.Converter\NCrunchToDotCover.Converter.csproj">
+      <Project>{3E32DBF6-7F69-4E53-8999-D11883DF423A}</Project>
+      <Name>NCrunchToDotCover.Converter</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="dotCoverCoverage.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="NCrunchCoverage.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
